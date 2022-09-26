@@ -1,3 +1,10 @@
+var question = document.getElementById('question');
+var a = document.getElementById("a+")
+var b= document.getElementById("b+")
+var c = document.getElementById("c+")
+
+
+
 var timeInterval = 0;
 var secondsLeft = 100;
 var timeReduce = 10;
@@ -35,15 +42,26 @@ var questions = [
 
 
 
-function renderQuiz(){
-    currentQuestion = 0;
-    question.innerHTML = questions[currentQuestion].question;
-
-}
-
-renderQuiz()
 
 
+
+
+
+
+
+
+
+
+
+
+
+// function renderQuiz(){
+//     currentQuestion = 0;
+//     question.innerHTML = questions[currentQuestion].question;
+
+// }
+
+// renderQuiz()
 
 // Timer
 button.addEventListener("click", function() {
