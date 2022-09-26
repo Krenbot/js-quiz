@@ -1,11 +1,13 @@
-var questionCounter = 0;
-var score = 0;
 var selection = [];
-var currentTime = document.querySelector("#currentTime")
-var timer = document.querySelector(#startTime);
+// var timer = document.querySelector(#startTime);
 var timeInterval = 0;
 var secondsLeft = 100;
-
+var timeReduce = 10;
+var questionCounter = 0;
+var score = 0;
+var timerEl = document.getElementById('timer');
+var button = document.getElementById('button')
+var currentTime = document.querySelector("#currentTime")
 
 // Question/answer bank
 var questions = [
@@ -50,20 +52,14 @@ button.addEventListener("click", function() {
         timeInterval = setInterval(function() {
             secondsLeft--;
             currentTime.textContent = "Time: " + secondsLeft;
+            console.log("clicked")
 
     if (secondsLeft <=0) {
         clearInterval(timeInterval)
             currentTime.textContent = "Time up!";
             }
         }
-    }, 1000)
-
-
-
-
-
-// TODO: add event listener on choices
-// Wrong answers deduct 10s
-//add Start button
-//add intro text
-//Submit initals in local storage
+     ,1000)
+    }
+    }
+)
