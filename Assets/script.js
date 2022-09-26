@@ -1,18 +1,21 @@
-var question = document.getElementById('question');
-var a = document.getElementById("a+")
-var b= document.getElementById("b+")
-var c = document.getElementById("c+")
+var h1 = document.querySelector("h1")
+var questionEl = document.querySelector("h3")
+var options = document.querySelector("ul")
+var choices = document.getElementById("choices")
+var startButton = document.querySelector('button')
 
-
-
-var timeInterval = 0;
-var secondsLeft = 100;
-var timeReduce = 10;
-var questionCounter = 0;
 var score = 0;
-// var button = document.getElementById('button')
-var currentTime = document.querySelector("#currentTime")
-var createUl = document.createElement("ul");
+//////////////////
+// var index = 0
+// var score = 0
+// var timeInterval = 0;
+// var secondsLeft = 100;
+// var timeReduce = 10;
+// var questionCounter = 0;
+// var currentTime = document.querySelector("#currentTime")
+// var createUl = document.createElement("ul");
+
+// var ul
 
 // Question/answer bank
 var questions = [
@@ -39,29 +42,19 @@ var questions = [
 }
 ];
 
+function renderQuiz(){
+    var currentQuestion = questions[index].question
+    questionEl.innerText = currentQuestion;
+    options.innerHTML = "";
+        for (var i = 0; i < questions[index].choices.length; i++){
+            var qbody = document.createElement('button')
+        }
+
+}
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-// function renderQuiz(){
-//     currentQuestion = 0;
-//     question.innerHTML = questions[currentQuestion].question;
-
-// }
-
-// renderQuiz()
 
 // Timer
 button.addEventListener("click", function() {
