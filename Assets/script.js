@@ -8,6 +8,10 @@ var score = 0;
 var timerEl = document.getElementById('timer');
 var button = document.getElementById('button')
 var currentTime = document.querySelector("#currentTime")
+var questionDiv = document.querySelector("#questionDiv")
+var ulCreate = document.createElement('ul')
+var index = 0
+
 
 // Question/answer bank
 var questions = [
@@ -35,15 +39,10 @@ var questions = [
 ];
 
 function renderQuiz(){
-// Sets up question
-// temp showing answer with questionslist[index].answer
-// condition to check if there are more ?'s'
-    var currentQuestion = questions[index]
-    h1.innnerText = currentQuestion.question
-    choicesEl.innerHTML = ""
+    var currentQuestion
+
 }
-
-
+renderQuiz()
 
 
 // Timer
