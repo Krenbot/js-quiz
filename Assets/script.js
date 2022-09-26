@@ -1,6 +1,10 @@
 var questionCounter = 0;
+var score = 0;
 var selection = [];
-
+var currentTime = document.querySelector("#currentTime")
+var timer = document.querySelector(#startTime);
+var timeInterval = 0;
+var secondsLeft = 100;
 
 
 // Question/answer bank
@@ -28,11 +32,38 @@ var questions = [
 }
 ];
 
-// TODO: add event listener on choices
+function renderQuiz(){
+// Sets up question
+// temp showing answer with questionslist[index].answer
+// condition to check if there are more ?'s'
+    var currentQuestion = questions[index]
+    h1.innnerText = currentQuestion.question
+    choicesEl.innerHTML = ""
+}
+
+
+
+
 // Timer
+button.addEventListener("click", function() {
+    if (timeInterval===0){
+        timeInterval = setInterval(function() {
+            secondsLeft--;
+            currentTime.textContent = "Time: " + secondsLeft;
+
+    if (secondsLeft <=0) {
+        clearInterval(timeInterval)
+            currentTime.textContent = "Time up!";
+            }
+        }
+    }, 1000)
+
+
+
+
+
+// TODO: add event listener on choices
 // Wrong answers deduct 10s
 //add Start button
 //add intro text
 //Submit initals in local storage
-//end of day 9/25
-
