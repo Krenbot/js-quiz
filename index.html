@@ -4,21 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JavaScript Quiz</title>
     <link rel = "style" href="assets/style.css">
     <link rel = "style" href="assets/reset.css">
 </head>
 <body>
+    <main id="quiz">
+        <h1 id = "title">Javascript Quiz</h1>
+        <div class = "quizContainer" id = "quiz">
+            <h2 id="question"></h2>
+            <li>
+                <input type = "radio" id="a" name = "answer" class = "answer" value = "a"/>
+                <label for = "a" id = "a+"></label>
+            </li>
 
-    <h1>Welcome to the Javacript Timed Quiz</h1>
-    
-    
-    <button id="button">Click Me!</button>
+            <li>
+                <input type = "radio" id="b" name = "answer" class = "answer" value = "b"/>
+                <label for = "b" id = "b+"></label>
+            </li>
+            
+            <li>
+                <input type = "radio" id="c" name = "answer" class = "answer" value = "c"/>
+                <label for = "c" id = "c+"></label>
+            </li>
+        </div>
+    </main>
 
-    <div id = "currentTime"></div>
-    
-    
-    
+
+
+
+
+
     <script src = "Assets/script.js"> 
     </script>
 </body>

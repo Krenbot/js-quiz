@@ -1,13 +1,11 @@
-var selection = [];
-// var timer = document.querySelector(#startTime);
 var timeInterval = 0;
 var secondsLeft = 100;
 var timeReduce = 10;
 var questionCounter = 0;
 var score = 0;
-var timerEl = document.getElementById('timer');
-var button = document.getElementById('button')
+// var button = document.getElementById('button')
 var currentTime = document.querySelector("#currentTime")
+var createUl = document.createElement("ul");
 
 // Question/answer bank
 var questions = [
@@ -34,21 +32,22 @@ var questions = [
 }
 ];
 
+
+
+
 function renderQuiz(){
-// Sets up question
-// temp showing answer with questionslist[index].answer
-// condition to check if there are more ?'s'
-    var currentQuestion = questions[index]
-    h1.innnerText = currentQuestion.question
-    choicesEl.innerHTML = ""
+    currentQuestion = 0;
+    question.innerHTML = questions[currentQuestion].question;
+
 }
 
+renderQuiz()
 
 
 
 // Timer
 button.addEventListener("click", function() {
-    if (timeInterval===0){
+    if (timeInterval === 0){
         timeInterval = setInterval(function() {
             secondsLeft--;
             currentTime.textContent = "Time: " + secondsLeft;
