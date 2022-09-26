@@ -1,9 +1,9 @@
-var selection = [];
-// var timer = document.querySelector(#startTime);
-var timeInterval = 0;
-var secondsLeft = 100;
-var timeReduce = 10;
-var questionCounter = 0;
+var h1 = document.querySelector("h1")
+var questionEl = document.querySelector("h3")
+var options = document.querySelector("ul")
+var choices = document.getElementById("choices")
+var startButton = document.querySelector('button')
+
 var score = 0;
 var timerEl = document.getElementById('timer');
 var button = document.getElementById('button')
@@ -45,9 +45,10 @@ function renderQuiz(){
 renderQuiz()
 
 
+
 // Timer
 button.addEventListener("click", function() {
-    if (timeInterval===0){
+    if (timeInterval === 0){
         timeInterval = setInterval(function() {
             secondsLeft--;
             currentTime.textContent = "Time: " + secondsLeft;
