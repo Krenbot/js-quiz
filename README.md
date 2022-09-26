@@ -1,5 +1,9 @@
 # JavaScript Word Quiz
 
+## Deployed Link
+
+https://krenbot.github.io/js-quiz/
+
 ## User Story
 
 ```
